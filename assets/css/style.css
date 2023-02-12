@@ -1,0 +1,60 @@
+/* CSS CUSTOM PROPERTIES */
+:root {
+  /* ## Colors */
+
+  --clr-primary: hsl(25, 97%, 53%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-300: hsl(217, 12%, 63%);
+  --clr-netural-500: hsl(216, 12%, 54%);
+  --clr-dark-700: hsl(213, 19%, 18%);
+  --clr-dark-900: hsl(216, 12%, 8%);
+
+  /* fonts */
+
+  --ff-main: 'Overpass', sans-serif;
+
+  --fs-base: 15px;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+}
+
+footer {
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
