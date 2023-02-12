@@ -44,6 +44,11 @@
 /*******************************************/
 
 body {
+  background: var(--clr-dark-900);
+  min-height: 100vh;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .flex {
@@ -73,22 +78,24 @@ main {
   justify-content: center;
   align-items: center;
 
-  min-height: 100vh;
-  background: var(--clr-dark-900);
+  flex-shrink: 0;
+  transition: all 0.5s ease-in-out;
 }
 
 .component {
   gap: 1.5rem;
   max-width: 375px;
   padding: 2rem;
-  margin: 0 1.5rem;
+  margin: 1.5rem;
 
-  border-radius: 2rem;
+  border-radius: 1rem;
   color: var(--clr-neutral-300);
   background: var(--clr-dark-700);
 
   font-family: var(--ff-main);
   font-size: var(--fs-base);
+
+  transition: all 0.5s ease-out;
 }
 
 .component h1 {
@@ -103,6 +110,29 @@ main {
 
 .rating {
   justify-content: space-between;
+  gap: 0.25rem;
+}
+
+.rating > * {
+  cursor: pointer;
+}
+
+.rating > *:hover,
+.rating > *:focus {
+  background: var(--clr-neutral-500);
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-bold);
+}
+
+.rating > *:active {
+  background: var(--clr-primary);
+  color: var(--clr-neutral-100);
+}
+
+.selected {
+  background: var(--clr-primary);
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-bold);
 }
 
 button {
@@ -116,14 +146,76 @@ button {
   background: var(--clr-primary);
   border-radius: 5rem;
   padding: 1rem 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--clr-neutral-100);
+  color: var(--clr-primary);
+}
+
+.wiggle {
+  animation: wiggle 0.2s ease-in-out 0s 1;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-10px);
+  }
+  20% {
+    transform: translateX(10px);
+  }
+  30% {
+    transform: translateX(-10px);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(-10px);
+  }
+  70% {
+    transform: translateX(10px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  90% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* thank you */
+
+.thank-you {
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.thank-you > .component {
+  align-items: center;
+  text-align: center;
+}
+
+.thank-you > .component picture + p {
+  background: hsla(216, 12%, 54%, 0.1);
+  padding: 0.5rem 1rem;
+
+  border-radius: 5rem;
+  color: var(--clr-primary);
 }
 
 footer {
-  position: absolute;
-  bottom: 5rem;
-
   color: white;
-  margin: 0 auto;
   width: 100%;
 }
 

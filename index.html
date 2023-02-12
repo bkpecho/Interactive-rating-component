@@ -37,12 +37,12 @@
       }
     </style>
   </head>
-  <body>
+  <body class="flex fd-c">
     <!-- Rating state start -->
     <main class="flex">
       <section class="component flex fd-c">
         <picture class="flex circle">
-          <img src="./images/icon-star.svg" alt="" />
+          <img src="./images/icon-star.svg" alt="star icon" />
         </picture>
         <h1>How did we do?</h1>
 
@@ -52,11 +52,11 @@
         </p>
 
         <div class="rating flex">
-          <span class="flex circle">1</span>
-          <span class="flex circle">2</span>
-          <span class="flex circle">3</span>
-          <span class="flex circle">4</span>
-          <span class="flex circle">5</span>
+          <span id="one" class="flex circle">1</span>
+          <span id="two" class="flex circle">2</span>
+          <span id="three" class="flex circle">3</span>
+          <span id="four" class="flex circle">4</span>
+          <span id="five" class="flex circle">5</span>
         </div>
         <button>Submit</button>
       </section>
@@ -64,10 +64,25 @@
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
+    <section class="thank-you flex">
+      <section class="component flex fd-c">
+        <picture>
+          <img
+            src="./images/illustration-thank-you.svg"
+            alt="illustration of thank you"
+          />
+        </picture>
 
-    <!-- Add rating here -->
-    <!-- You selected out of 5 Thank you! We appreciate you taking the time to give a
-    rating. If you ever need more support, don’t hesitate to get in touch! -->
+        <!-- Add rating here -->
+        <p>You selected<span id="rating-number"> 0 </span>out of 5</p>
+
+        <h1>Thank you!</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hestate to get in touch!
+        </p>
+      </section>
+    </section>
 
     <!-- Thank you state end -->
 
@@ -80,5 +95,7 @@
         <a href="https://www.github.com/bkpecho" target="_blank">BK Pecho</a>.
       </div>
     </footer>
+
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
