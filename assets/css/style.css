@@ -130,9 +130,9 @@ main {
 }
 
 .selected {
-  background: var(--clr-primary);
-  color: var(--clr-neutral-100);
-  font-weight: var(--fw-bold);
+  background: var(--clr-primary) !important;
+  color: var(--clr-neutral-100) !important;
+  font-weight: var(--fw-bold) !important;
 }
 
 button {
