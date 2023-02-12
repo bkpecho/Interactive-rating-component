@@ -6,7 +6,7 @@
 
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-neutral-300: hsl(217, 12%, 63%);
-  --clr-netural-500: hsl(216, 12%, 54%);
+  --clr-neutral-500: hsl(216, 12%, 54%);
   --clr-dark-700: hsl(213, 19%, 18%);
   --clr-dark-900: hsl(216, 12%, 8%);
 
@@ -46,13 +46,89 @@
 body {
 }
 
+.flex {
+  display: flex;
+}
+
+.fd-c {
+  flex-direction: column;
+}
+
+.circle {
+  background: hsla(216, 12%, 54%, 0.1);
+  justify-content: center;
+  align-items: center;
+
+  align-self: flex-start;
+  border-radius: 50%;
+
+  height: 3rem;
+  width: 3rem;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+main {
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  background: var(--clr-dark-900);
+}
+
+.component {
+  gap: 1.5rem;
+  max-width: 375px;
+  padding: 2rem;
+  margin: 0 1.5rem;
+
+  border-radius: 2rem;
+  color: var(--clr-neutral-300);
+  background: var(--clr-dark-700);
+
+  font-family: var(--ff-main);
+  font-size: var(--fs-base);
+}
+
+.component h1 {
+  color: var(--clr-neutral-100);
+  font-size: 1.75rem;
+  font-weight: var(--fw-bold);
+}
+
+.component p {
+  line-height: 1.5rem;
+}
+
+.rating {
+  justify-content: space-between;
+}
+
+button {
+  text-transform: uppercase;
+  font-family: var(--ff-main);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+  letter-spacing: 2px;
+  border: none;
+  color: white;
+  background: var(--clr-primary);
+  border-radius: 5rem;
+  padding: 1rem 0;
 }
 
 footer {
+  position: absolute;
+  bottom: 5rem;
+
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.attribution * {
+  font-size: var(--fs-base);
 }
 
 /******************************************
