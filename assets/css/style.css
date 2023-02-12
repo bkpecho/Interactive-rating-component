@@ -82,7 +82,8 @@ main {
   transition: all 0.5s ease-in-out;
 }
 
-.component {
+.rating,
+.thank-you {
   gap: 1.5rem;
   max-width: 375px;
   padding: 2rem;
@@ -94,11 +95,10 @@ main {
 
   font-family: var(--ff-main);
   font-size: var(--fs-base);
-
-  transition: all 0.5s ease-out;
 }
 
-.component h1 {
+.component h1,
+.component h2 {
   color: var(--clr-neutral-100);
   font-size: 1.75rem;
   font-weight: var(--fw-bold);
@@ -108,23 +108,23 @@ main {
   line-height: 1.5rem;
 }
 
-.rating {
+.rating-number {
   justify-content: space-between;
   gap: 0.25rem;
 }
 
-.rating > * {
+.rating-number > * {
   cursor: pointer;
 }
 
-.rating > *:hover,
-.rating > *:focus {
+.rating-number > *:hover,
+.rating-number > *:focus {
   background: var(--clr-neutral-500);
   color: var(--clr-neutral-100);
   font-weight: var(--fw-bold);
 }
 
-.rating > *:active {
+.rating-number > *:active {
   background: var(--clr-primary);
   color: var(--clr-neutral-100);
 }
@@ -152,6 +152,10 @@ button {
 button:hover {
   background: var(--clr-neutral-100);
   color: var(--clr-primary);
+}
+
+button:focus {
+  border-radius: 5rem;
 }
 
 .wiggle {
@@ -198,15 +202,11 @@ button:hover {
 
 .thank-you {
   display: none;
-  transition: all 0.5s ease-in-out;
-}
-
-.thank-you > .component {
   align-items: center;
   text-align: center;
 }
 
-.thank-you > .component picture + p {
+.thank-you > picture + p {
   background: hsla(216, 12%, 54%, 0.1);
   padding: 0.5rem 1rem;
 

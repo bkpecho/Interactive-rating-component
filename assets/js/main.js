@@ -31,12 +31,12 @@ rating.forEach(function (number) {
 
 function showThankYou() {
   if (selectedValue) {
-    const ratingComponent = document.querySelector('main');
+    const ratingComponent = document.querySelector('.rating');
     const thankYouComponent = document.querySelector('.thank-you');
     const showSelectedValue = document.querySelector('#rating-number');
 
     ratingComponent.style.display = 'none';
-    thankYouComponent.style.display = 'block';
+    thankYouComponent.style.display = 'flex';
     showSelectedValue.textContent = ` ${selectedValue} `;
   } else {
     const button = document.querySelector('button');
