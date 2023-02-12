@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://bk-interactive-rating-component.netlify.app)
+- Solution URL: [FrontEnd Mentor](https://www.frontendmentor.io/solutions/interactive-rating-component-solution-using-flex-and-vanilla-js-rsXJ-x6ifH)
+- Live Site URL: [Netlify](https://bk-interactive-rating-component.netlify.app)
 
 ## My process
 
@@ -56,8 +56,6 @@ JavaScript
 - DOM Manipulation
 - Event Listeners
 - Class Toggling
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
